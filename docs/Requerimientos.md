@@ -15,5 +15,18 @@ Historias / Casos de uso
 ========================
 
 1. Como usuario, dado un titulo y una descripción quiero poder crear una tarea para que se muestre en el listado de tareas
-2. Como usuario, al ingresar a la aplicacion quiero ver el listado de tareas pendientes
+  - Criterios de aceptación:
+    - debe fallar si no se ingresa titulo o descripcion
+    - debe fallar si se ingresa un titulo duplicado
+    - debe insertar una nueva tarea si se ingresa una descripcion y un titulo 
+    - la nueva tarea debe aparecer como "sin finalizar"
 
+2. Como usuario, al ingresar a la aplicacion quiero ver el listado de tareas pendientes
+  - Criterios de aceptacion
+    - se debe mostrar para cada tarea su titulo y descripcion
+    - no se deben mostrar tareas que ya estén finalizadas
+
+3. Como usuario, quiero poder marcar una tarea como finalizada para que ya no aparezca mas en la lista
+  - Criterios de aceptacion
+    - al marcar como finalizada una tarea, debe actualizar el estado de la misma a finalizado
+    
