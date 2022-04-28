@@ -9,7 +9,6 @@ export class GetTasksHandler {
 
   public async handle(req: Request, res: Response) {
     try {
-      console.log("entra aca");
       const tasks = await this.action.execute();
       res.status(200).json(tasks);
     } catch (error) {
